@@ -1,0 +1,8 @@
+Color : Scheme of my website
+
+ContainerType1 background Color = #353543
+ContainerType2 background Color = #272833
+ContainerType3 background Color = #403f4f
+
+TextColorType1 = #fdfffe
+TextColorType2 = #ffba19

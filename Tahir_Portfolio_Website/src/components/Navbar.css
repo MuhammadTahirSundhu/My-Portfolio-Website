@@ -1,0 +1,66 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    background-color: transparent;
+    /* border: 2px solid Red; */
+    position: absolute;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap:50px;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* border: 2px solid blue; */
+    width: 15%;
+}
+
+.Pages {
+    display: flex;
+    /* border: 2px solid Green; */
+    gap: 25px;
+    text-decoration: none;
+    width: 55%;
+
+    .Page{
+        color: grey;
+    }
+    .Page:hover{
+        color: white;
+        cursor: pointer;
+    }
+    .Page:active{
+        color: white;
+    }
+}
+
+.others{
+    /* border: 2px solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 30px;
+    width: 25%;
+}
+
+.Navbaricon {
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none; 
+    transition: 100ms;
+
+}
+
+.Navbaricon:hover {
+    color: #ccc;
+    transform: scale(1.1);
+    transition: 100ms;
+}
