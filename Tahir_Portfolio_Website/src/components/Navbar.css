@@ -1,52 +1,50 @@
-/* Navbar.css */
-
+/* General styling for desktop */
 .navbar {
     display: flex;
     align-items: center;
-    justify-content:flex-start;
+    justify-content: space-between;
     background-color: transparent;
-    /* border: 2px solid Red; */
     position: absolute;
     width: 90%;
-    padding-left: 5%;
-    padding-right: 5%;
-    gap:50px;
-    padding-top: 40px;
+    padding: 40px 5%;
+    gap: 50px;
     z-index: 1;
 }
 
 .brand {
+    /* border: 2px solid red; */
     font-size: 1.3rem;
     font-weight: bold;
-    /* border: 2px solid blue; */
-    width: 15%;
+    width: 35%;
 }
 
 .Pages {
+    /* border: 2px solid rgb(25, 253, 0); */
     display: flex;
-    /* border: 2px solid Green; */
     gap: 25px;
     text-decoration: none;
     width: 55%;
-
-    .Page{
-        color: grey;
-    }
-    .Page:hover{
-        color: white;
-        cursor: pointer;
-    }
-    .Page:active{
-        color: white;
-    }
 }
 
-.others{
-    /* border: 2px solid blue; */
+.Page {
+    /* border: 2px solid rgb(191, 212, 0); */
+    color: grey;
+}
+
+.Page:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.Page:active {
+    color: white;
+}
+
+.others {
+    /* border: 2px solid rgb(0, 13, 255); */
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
     gap: 30px;
     width: 25%;
 }
@@ -54,13 +52,132 @@
 .Navbaricon {
     color: white;
     font-size: 1.3rem;
-    text-decoration: none; 
+    text-decoration: none;
     transition: 100ms;
-
 }
 
 .Navbaricon:hover {
     color: #ccc;
     transform: scale(1.1);
     transition: 100ms;
+}
+
+.menu-icon {
+    display: none;
+    border: 2px solid grey;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* When the mobile menu is open */
+.Pages.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust this value to set the menu right below the menu icon */
+    right: 5%;
+/* From https://css.glass */
+        background: rgba(103, 97, 97, 0.18);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10.9px);
+        -webkit-backdrop-filter: blur(10.9px);
+        border: 1px solid rgba(103, 97, 97, 0.25);    padding: 10px;
+    gap: 15px;
+    width: 50%; /* Adjust width as per your requirement */
+    z-index: 4;
+
+    .Page{
+       /* From https://css.glass */
+        background: rgba(41, 40, 40, 0.59);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(12.4px);
+        -webkit-backdrop-filter: blur(12.4px);
+        border: 1px solid rgba(41, 40, 40, 0.69);
+    }
+
+}
+
+/* Responsive styling for smaller screens (tablets) */
+@media only screen and (max-width: 900px) {
+    .navbar {
+        gap: 30px;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    .Pages {
+        width: 50%;
+        gap: 15px;
+    }
+
+    .others {
+        width: 30%;
+        gap: 20px;
+    }
+
+    .Navbaricon {
+        font-size: 1.2rem;
+    }
+}
+
+/* Responsive styling for smaller screens (tablets) */
+@media only screen and (max-width: 768px) {
+    
+    .navbar {
+        padding: 20px 5%;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .brand {
+        font-size: 1.2rem;
+        width: 40%;
+    }
+
+    .Pages {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .others {
+        width: 30%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .Navbaricon {
+        font-size: 1.1rem;
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+}
+
+
+/* Responsive styling for mobile screens */
+@media only screen and (max-width: 480px) {
+ 
+    .navbar {
+        width: 92%;
+        gap: 30px;
+        background-color: #272833;
+    }
+    .brand {
+        width: 50%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
 }

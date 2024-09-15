@@ -32,7 +32,7 @@
         padding-left: 5%;
         padding-right: 5%;
         position: relative;
-        z-index: 0;
+        z-index: 2;
     }
     .RightContainer{
         display: flex;
@@ -43,7 +43,7 @@
         width: 40%;
         height: 60%;
         padding-right: 5%;
-        z-index: 2;
+        z-index: 0;
     }
 }
 
@@ -141,7 +141,7 @@
 }
 .DarkGreyContainer{
     background-color: #272833;
-    border: 2px solid rgb(0, 255, 21);
+    /* border: 2px solid rgb(0, 255, 21); */
     width: 100%;
 
     padding: 0px 50px;
@@ -165,7 +165,7 @@
     align-items: center;
     justify-content: flex-start;
     gap: 30px;
-    width: 55%;
+    width: 100%;
 }
 
   .SocialIcon {
@@ -200,3 +200,364 @@
       transform: translateY(0);
     }
   }
+
+  
+  @media only screen and (max-width: 1080px) {
+ 
+    .headerContainer{
+      width: 100%;
+    }
+    .headerContainer{
+     
+      .LeftContainer{
+        
+      }
+      .RightContainer{
+         
+      }
+  }
+  
+  
+  .intro {
+      font-size: 2.5rem;
+    }
+    
+    .name {
+      font-size: 2.85rem;
+      line-height: 50px;
+    }
+    
+    .underline {
+      border-top: 6px solid #ffba19;
+      padding-bottom: 45px;
+    }
+    
+    .description {
+      font-size: 1rem;
+    }
+    
+    .servicesHeader {
+      font-size: 1.2rem;
+      padding-bottom: 25px;
+    }
+    
+    .servicesDescription {
+      font-size: 1.5rem;
+      padding-bottom: 15px;
+    }
+    
+    .showMore {
+      font-size: 1rem;
+      padding-bottom: 45px;
+    }
+    
+    .arrowIcon {
+      font-size: 0.7rem;
+    }
+  
+  .picContainer{
+      width: 450px;
+      height: 450px;
+   
+      .myPic {
+          width: 450px; /* Set your desired width */
+          height: 450px; /* Set your desired height */
+          }      
+  }
+
+   
+.SocialIcons{
+
+  }
+
+.SocialIcon {
+  font-size: 1.3rem;
+  border-radius: 50%;
+}
+
+    
+}
+
+@media only screen and (max-width: 790px) {
+ 
+  .GreyContainer{
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .DarkGreyContainer{
+
+  }
+  .headerContainer{
+    gap: 20%;
+    .RightContainer{
+      justify-content: center ;
+    }
+  }
+  
+.intro {
+    font-size: 2rem;
+  }
+  
+  .name {
+    font-size: 2.40rem;
+    line-height: 40px;
+  }
+  
+  .underline {
+    border-top: 5px solid #ffba19;
+    padding-bottom: 40px;
+  }
+  
+  .description {
+    font-size: 0.8rem;
+  }
+  
+  .servicesHeader {
+    font-size: 1rem;
+    padding-bottom: 20px;
+  }
+  
+  .servicesDescription {
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+  }
+  
+  .showMore {
+    font-size: 0.8rem;
+    padding-bottom: 40px;
+  }
+  
+  .arrowIcon {
+    font-size: 0.5rem;
+  }
+
+.picContainer{
+    width: 400px;
+    height: 400px;
+ 
+    .myPic {
+        width: 400px; /* Set your desired width */
+        height: 400px; /* Set your desired height */
+        }      
+}
+
+ 
+.SocialIcons{
+
+}
+
+.SocialIcon {
+font-size: 1.1rem;
+border-radius: 50%;
+}
+
+}
+
+
+@media only screen and (max-width: 540px) {
+ 
+  .GreyContainer{
+    /* height: 100vh; */
+  }
+  .DarkGreyContainer{
+
+  }
+  .headerContainer{
+    height: fit-content;
+    flex-direction: column;
+    gap: 25px;
+    top: 80px;
+    
+    .LeftContainer{
+      padding-left: 1%;
+      padding-right: 1%;
+      width: 90%;
+
+    }
+    .RightContainer{
+      justify-content: flex-start ;
+      padding-left: 1%;
+      padding-right: 1%;
+      width: 90%;
+    }
+  }
+  
+.intro {
+    font-size: 1.6rem;
+  }
+  
+  .name {
+    font-size: 2rem;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .underline {
+    border-top: 5px solid #ffba19;
+    padding-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 0.8rem;
+  }
+  
+  .servicesHeader {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  
+  .servicesDescription {
+    font-size: 1.1rem;
+    padding-bottom: 8px;
+  }
+  
+  .showMore {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+  }
+  
+  .arrowIcon {
+    font-size: 0.5rem;
+  }
+
+  .picContainer{
+    width: 250px;
+    height: 250px;
+
+    margin:550px 0px 100px;
+    background-color: #272833;
+    box-shadow: 0 4px 8px #272833; /* Add shadow for depth */
+    border-radius: 50%;
+    position:relative;
+
+    .myPic {
+        position: absolute;
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust to be truly centered */
+        width: 250px; /* Set your desired width */
+        height: 250px; /* Set your desired height */
+        border-radius: 50%; /* Make the image circular */
+        object-fit: cover; /* Ensures image scales properly inside container */
+        overflow: visible;
+        z-index: 1;
+        opacity: 0; /* Initially hidden */
+        animation: fadeInOut 4s ease-in-out forwards; /* Apply fade-in animation */
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    }
+
+    .myPic:hover {
+        box-shadow: 0 6px 12px #272833; /* Add a hover effect for better interactivity */
+        transform: translate(-50%, -50%) scale(1.05); /* Slightly scale up on hover */
+    }
+
+    
+}
+
+ 
+.SocialIcons{
+
+}
+
+.SocialIcon {
+font-size: 1.1rem;
+border-radius: 50%;
+}
+}
+
+@media only screen and (max-width: 480px) {
+ 
+  .GreyContainer{
+  }
+  .DarkGreyContainer{
+
+  }
+  .headerContainer{
+    height: fit-content;
+    flex-direction: column;
+    gap: 25px;
+    top: 100px;
+    
+    .LeftContainer{
+      padding-left: 1%;
+      padding-right: 1%;
+      width: 92%;
+
+    }
+    .RightContainer{
+      justify-content: flex-start ;
+      padding-left: 1%;
+      padding-right: 1%;
+      width: 92%;
+    }
+  }
+  
+.intro {
+    font-size: 1.5rem;
+  }
+  
+  .name {
+    font-size: 1.9rem;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .underline {
+    border-top: 5px solid #ffba19;
+    padding-bottom: 5px;
+  }
+  
+  .description {
+    font-size: 0.75rem;
+  }
+  
+  .servicesHeader {
+    font-size: 0.95rem;
+    padding-bottom: 10px;
+  }
+  
+  .servicesDescription {
+    font-size: 1.05rem;
+    padding-bottom: 7px;
+  }
+  
+  .showMore {
+    font-size: 0.8rem;
+    padding-bottom: 15px;
+  }
+  
+  .arrowIcon {
+    font-size: 0.5rem;
+  }
+
+  .picContainer{
+  
+    margin:600px 0px 100px;
+    background-color: #272833;
+    box-shadow: 0 4px 8px #272833; /* Add shadow for depth */
+    border-radius: 50%;
+    position:relative;
+
+    }
+
+ 
+.SocialIcons{
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.SocialIcon {
+font-size: 1.0rem;
+border-radius: 50%;
+}
+
+}
+  @media only screen and (max-width: 480px) {
+ 
+    .headerContainer{
+      width: 100%;
+    }
+
+}

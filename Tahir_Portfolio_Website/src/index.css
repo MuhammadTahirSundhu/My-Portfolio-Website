@@ -16,7 +16,6 @@
 body {
   font-family: var(--font-family)!important;
     margin: 0; /* Remove default margin */
-    box-sizing: border-box; /* Ensure padding does not affect total width */
 }
 
 
