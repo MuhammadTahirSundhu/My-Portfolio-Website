@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaPinterestP, FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'; // Import the icons
 import { useNavigate } from 'react-router-dom';
