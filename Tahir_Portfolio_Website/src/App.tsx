@@ -7,7 +7,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar'
-
+import Footer from './components/Footer'
 
 
 function App() {
@@ -24,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<h1>402 : Page Not Found!</h1>} />
         </Routes>
+        <Footer/>
       </Router>
     </>
   )

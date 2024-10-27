@@ -1,0 +1,273 @@
+
+.footer h1{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+
+}
+.footer h2{
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+
+}
+.footer h3{
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+
+}
+.footer h4{
+    font-size: 0.85em;
+    color: grey;
+}
+.footer h5{
+    font-size: 0.75em;
+    color: grey;
+}
+.footer p{
+    font-size: 0.9em;
+    color: grey;
+}
+.mainContainer{
+
+    width: 100%;
+    height: 450px;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background: #0f1214;
+   font-size: 1em;
+}
+
+.nestCont1{
+    width: 80%;
+    height:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.nestCont2{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.nestCont3{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+
+.nestCont4{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.nestCont5{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nestCont6{
+    width: 20%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nestCont7,.nestCont8{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nestCont8{
+    justify-content: flex-end;
+    padding-right: 10px;
+    flex-wrap: wrap;
+}
+.socialIcons{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 100%;
+}
+
+  .socialIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2px;
+    color: #ffba19;
+    font-size: 1.3rem;
+    text-decoration: none; 
+    transition: 100ms;
+    font-size: 1rem;
+    background-color: #505055;
+    padding: 6px;
+    border-radius: 50%;
+
+}
+
+.socialIcon:hover {
+    color: #ccc;
+    transform: scale(1.1);
+    transition: 100ms;
+}
+  
+  
+.inputArea{
+    width: 70%;
+    color: #0d0f10;
+    background: grey;
+}
+.footerbtn {
+    width: 25%;
+    background: #010910;
+    color: blue;
+    margin-left: 8px;
+  }
+.footerbtn:hover{
+    background: #3d1fd0;
+}
+.inputblock{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.links:hover{
+    text-decoration: underline; /* Underline the text */
+    color: blue;
+    cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+    .footer h3{
+        font-size: 0.7em;
+    }
+    .footer h4{
+        font-size: 0.65em;
+        color: grey;
+    }
+    .mainContainer{
+        height: 600px;
+    }
+    .nestCont1{
+        height: 90%
+    }
+    .nestCont2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+    .nestCont4{
+        width: 100%;
+        height: 80%;
+        align-items: flex-start;
+    }
+    .nestCont3{
+        height: 15%;
+    }
+    .nestCont5{
+        width: 100%;
+    }
+    .inputblock{
+        flex-direction: column;
+    }
+    .inputArea{
+        width: 100%;
+    }
+    .footerbtn{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 512px) {
+    .footer h3{
+        font-size: 0.6em;
+    }
+    .footer h4{
+        font-size: 0.55em;
+        color: grey;
+    }
+    .mainContainer{
+        height: 600px;
+    }
+    .nestCont1{
+        height: 90%
+    }
+    .nestCont2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+    .nestCont4{
+        width: 100%;
+        height: 80%;
+        align-items: flex-start;
+    }
+    .nestCont3{
+        height: 15%;
+    }
+    .nestCont5{
+        width: 100%;
+    }
+    .socialIcon {
+        width: 20px; /* Set the width of the icon */
+        height: 20px; /* Set the height of the icon */
+        margin: 5px;
+    }
+}
+
+
+@media (max-width: 400px) {
+    .footer h3{
+        font-size: 0.6em;
+    }
+    .footer h4{
+        font-size: 0.55em;
+        color: grey;
+    }
+    .mainContainer{
+        height: 600px;
+    }
+    .nestCont1{
+        height: 90%
+    }
+    .nestCont2{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+    .nestCont4{
+        width: 100%;
+        height: 80%;
+        align-items: flex-start;
+    }
+    .nestCont3{
+        height: 15%;
+    }
+    .nestCont5{
+        width: 100%;
+    }
+   
+}

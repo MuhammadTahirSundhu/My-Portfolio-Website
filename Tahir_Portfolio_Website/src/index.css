@@ -11,6 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --font-family: 'Montserrat', sans-serif;
+  --z-index-overlay: 4; /* Set a global z-index for overlays and dropdowns */
+
 }
 
 body {

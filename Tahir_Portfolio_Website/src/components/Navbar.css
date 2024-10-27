@@ -1,21 +1,26 @@
 /* General styling for desktop */
 .navbar {
+    /* border: 2px solid red; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
     position: absolute;
-    width: 90%;
+    width: 100%;
     padding: 40px 5%;
     gap: 50px;
     z-index: 1;
+    background-color:  #353543;
+
 }
 
 .brand {
     /* border: 2px solid red; */
     font-size: 1.3rem;
     font-weight: bold;
-    width: 35%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
 .Pages {
@@ -23,7 +28,8 @@
     display: flex;
     gap: 25px;
     text-decoration: none;
-    width: 55%;
+    width: 40%;
+    justify-content: center;
 }
 
 .Page {
@@ -44,7 +50,7 @@
     /* border: 2px solid rgb(0, 13, 255); */
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 30px;
     width: 25%;
 }
@@ -86,7 +92,7 @@
         border: 1px solid rgba(103, 97, 97, 0.25);    padding: 10px;
     gap: 15px;
     width: 50%; /* Adjust width as per your requirement */
-    z-index: 4;
+    z-index: var(--z-index-overlay); /* Use the global z-index variable */
 
     .Page{
        /* From https://css.glass */
@@ -96,11 +102,36 @@
         backdrop-filter: blur(12.4px);
         -webkit-backdrop-filter: blur(12.4px);
         border: 1px solid rgba(41, 40, 40, 0.69);
+        width: 85%;
+        padding-left: 8%;
     }
 
 }
 
-/* Responsive styling for smaller screens (tablets) */
+@media only screen and (max-width: 1120px) {
+    .navbar {
+        gap: 10px;
+    }
+
+    .brand {
+
+        font-size: 1.2rem;
+        width: 20%;
+    }
+
+    .Pages {
+
+        width: 40%;
+        gap: 15px;
+    }
+
+    .others {
+        width: 20%;
+        gap: 20px;
+    }
+
+}
+Responsive styling for smaller screens (tablets)
 @media only screen and (max-width: 900px) {
     .navbar {
         gap: 30px;
@@ -163,20 +194,47 @@
     }
 
 }
-
-
-/* Responsive styling for mobile screens */
 @media only screen and (max-width: 480px) {
  
     .navbar {
-        width: 92%;
-        gap: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
         background-color: #272833;
+        gap: 0px;
     }
     .brand {
-        width: 50%;
+        font-size: 1rem;
+        width: 60%;
+        padding: 6px;
+    }
+
+    .Pages {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .others {
+        width: 27%;
+        justify-content: space-between;
+        padding: 8px;
+    }
+    
+    .menu-icon {
         font-size: 1.1rem;
-        text-align: center;
+        padding: 7px;
+    }
+
+    .Navbaricon {
+        font-size: 0.9rem;
+    }
+
+    /* Show the hamburger menu icon */
+    .menu-icon {
+        display: block;
     }
 
 }
