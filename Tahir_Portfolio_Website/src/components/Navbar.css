@@ -21,6 +21,7 @@
     width: 25%;
     display: flex;
     justify-content: center;
+    color: #53525f;
 }
 
 .Pages {
@@ -74,6 +75,7 @@
     justify-content: center;
     font-size: 1.1rem;
     cursor: pointer;
+    color: #53525f;
 }
 
 /* When the mobile menu is open */
@@ -131,7 +133,6 @@
     }
 
 }
-Responsive styling for smaller screens (tablets)
 @media only screen and (max-width: 900px) {
     .navbar {
         gap: 30px;
@@ -204,9 +205,10 @@ Responsive styling for smaller screens (tablets)
         gap: 0px;
     }
     .brand {
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 60%;
         padding: 6px;
+        justify-content: flex-start;
     }
 
     .Pages {
@@ -220,16 +222,17 @@ Responsive styling for smaller screens (tablets)
     .others {
         width: 27%;
         justify-content: space-between;
+        font-size: 1.1rem;
         padding: 8px;
     }
     
     .menu-icon {
         font-size: 1.1rem;
-        padding: 7px;
+        padding: 8px;
     }
 
     .Navbaricon {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     /* Show the hamburger menu icon */
